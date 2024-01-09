@@ -31,7 +31,7 @@ const readHtmlFromFile = async (filePath) => {
 };
 
 const fetchData = async () => {
-  const filePath = 'test.txt'; // Update with the actual file path
+  const filePath = './test.txt'; // Update with the actual file path
   const htmlContent = await readHtmlFromFile(filePath);
   return cheerio.load(htmlContent);
 };
